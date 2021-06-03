@@ -2,6 +2,13 @@ import path from 'path';
 import { Command } from 'commander';
 import { serve } from 'local-api';
 
+/*
+our production flag, if running in production we will change all of the node processes to production, 
+this will manually override a user having "development" environment set.
+*/
+
+ const isProduction = process.env.NODE_ENV === 'production';
+
 export const serveCommand = new Command()
   .command('serve [filename]')
   .description('Open a file for editing')
@@ -9,7 +16,7 @@ export const serveCommand = new Command()
   .action(async (filename ='notebook.js', options: {port: string}) => {
     try {
       const dir = path.join(process.cwd(), path.dirname(filename));
-      await serve(parseInt(options.port), path.basename(filename), dir);
+      await serve(parseInt(options.port), path.basename(filename), dir, !isProduction);
       console.log(
         `Opened ${filename}. Navigate to http://localhost:${options.port} to edit the file`
       )
