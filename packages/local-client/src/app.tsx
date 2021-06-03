@@ -9,6 +9,7 @@ const App = () => {
   return (  
   <Provider store={store}>  
     <div>
+      
       <CellList />
       
     </div>
