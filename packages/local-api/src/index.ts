@@ -7,6 +7,7 @@ import { createCellsRouter } from './routes/cells';
 export const serve = (port: number, filename: string, dir: string, useProxy: boolean) => {
   const app = express();
   
+  app.use(createCellsRouter(filename, dir));
 
   if (useProxy) {
     /*
@@ -28,7 +29,7 @@ export const serve = (port: number, filename: string, dir: string, useProxy: boo
   }
 
   
-  app.use(createCellsRouter(filename, dir));
+  
   
   /* we are returning a promise wrapped around our resolution of the express server, on resolve we listen on the required port, on error we reject. 
   The actual error handling and messaging is handled in our CLI file to try to extract use cases where the user will actually see the erors
