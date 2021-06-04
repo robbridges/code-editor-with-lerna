@@ -1,5 +1,5 @@
 {
-  "name": "flint-editor",
+  "name": "flintstrike-editor",
   "version": "1.0.0",
   "description": "",
   "publishConfig": {
@@ -18,11 +18,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@flint-editor/local-api": "^1.0.0",
+    "@flintstrike-editor/local-api": "^1.0.0",
     "commander": "^7.2.0"
   },
   "devDependencies": {
     "@types/node": "^15.9.0",
     "typescript": "^4.3.2"
-  }
+  },
+  "gitHead": "9887311c569663d137cfadd5a391068802b4b076"
 }

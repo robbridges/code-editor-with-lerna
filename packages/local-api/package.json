@@ -1,5 +1,5 @@
 {
-  "name": "@flint-editor/local-api",
+  "name": "@flintstrike-editor/local-api",
   "version": "1.0.0",
   "description": "",
   "files": [
@@ -24,9 +24,10 @@
     "typescript": "^4.3.2"
   },
   "dependencies": {
-    "@flint-editor/local-client": "^1.0.0",
+    "@flintstrike-editor/local-client": "^1.0.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "http-proxy-middleware": "^2.0.0"
-  }
+  },
+  "gitHead": "9887311c569663d137cfadd5a391068802b4b076"
 }

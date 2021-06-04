@@ -1,5 +1,5 @@
 {
-  "name": "@flint-editor/local-client",
+  "name": "@flintstrike-editor/local-client",
   "version": "1.0.0",
   "publishConfig": {
     "access": "public"
@@ -62,5 +62,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "gitHead": "9887311c569663d137cfadd5a391068802b4b076"
 }
