@@ -24,7 +24,7 @@ export const serve = (port: number, filename: string, dir: string, useProxy: boo
     it does not work to try to load the build direct form the node modules, we get a cannot get error. So we have to try to utilyze node to find the correct path
     we are then trying to get just the directory name of the path (we actually do not need the index.html, we just want the build directory of our local client)
     */
-    const packagePath = require.resolve('local-client/build/index.html')
+    const packagePath = require.resolve('@flint-editor/local-client/build/index.html')
     app.use(express.static(path.dirname(packagePath)));
   }
 

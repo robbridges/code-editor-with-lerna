@@ -1,6 +1,6 @@
 import path from 'path';
 import { Command } from 'commander';
-import { serve } from 'local-api';
+import { serve } from '@flint-editor/local-api';
 
 /*
 our production flag, if running in production we will change all of the node processes to production, 
