@@ -1,0 +1,2 @@
+(this["webpackJsonp@flintstrike-editor/local-client"]=this["webpackJsonp@flintstrike-editor/local-client"]||[]).push([[185],{319:function(n,e){var i;(i=Prism).languages.ignore={comment:/^#.*/m,entry:{pattern:/\S(?:.*(?:(?:\\ )|\S))?/,alias:"string",inside:{operator:/^!|\*\*?|\?/,regex:{pattern:/(^|[^\\])\[[^\[\]]*\]/,lookbehind:!0},punctuation:/\//}}},i.languages.gitignore=i.languages.ignore,i.languages.hgignore=i.languages.ignore,i.languages.npmignore=i.languages.ignore}}]);
+//# sourceMappingURL=185.3a5b044f.chunk.js.map
